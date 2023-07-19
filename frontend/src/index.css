@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  background-color: #22303b;
+  color: #ebe7d8;
+  font-family: 'Spectral SC', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

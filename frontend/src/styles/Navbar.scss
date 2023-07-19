@@ -1,0 +1,38 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 130px;
+    background-color: #22303b;
+
+    div {
+        line-height: 130px;
+        margin-left: 60px;
+        margin-right: 60px;
+        color: #ebe7d8;
+    }
+
+    .navbar-links {
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+
+        a {
+            text-decoration: none;
+            color: #ebe7d8;
+        }
+    }
+
+    .navbar-icons-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        a {
+            height: 75%;
+        }
+        .navbar-icons {
+            cursor: pointer;
+        }
+    }
+
+}
