@@ -22,11 +22,11 @@ exports.main = async (req, res) => {
         text: message
     };
 
-    transporter.await.sendMail(mailOptions, function(err, mail) {
+    transporter.sendMail(mailOptions, function(err, mail) {
         if (err) {
             console.log(err);
         } else {
-            console.log("Email sent: " + mail.res);
+            console.log("Email sent: " + mail.response);
         }
         res.redirect("/");
     })
