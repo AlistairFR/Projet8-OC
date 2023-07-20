@@ -1,6 +1,6 @@
 function ContactForm() {
     return (
-        <form className="footer-form" id="contact-form" action="/send/mail" method="post">
+        <form className="footer-form" id="contact-form" action="/sendmail" method="post">
                 <div className="form-names">
                     <div>
                         <label>Nom</label>

@@ -13,6 +13,6 @@ app.use((req, res, next) => {
 });
 
 app.use(express.json());
-app.use("/send", mailRoute);
+app.use("/", mailRoute);
 
 module.exports = app;
