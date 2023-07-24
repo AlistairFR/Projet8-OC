@@ -1,7 +1,12 @@
 const nodemailer = require ("nodemailer");
 
 exports.sendEmail = (req, res) => {
+    // Test
+    console.log("Email request received!");
+
     const { email, message, name, subject } = req.body;
+    // Test
+    console.log("Form data:", name, email, subject, message);
 
     //Création d'un transporteur Nodemailer en utilisant un compte Gmail
     const transporter = nodemailer.createTransport({
