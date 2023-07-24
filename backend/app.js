@@ -1,6 +1,6 @@
 const express = require("express");
 
-const mailRoute = require("./routes/mail");
+const mailRoutes = require("./routes/mail");
 
 const app = express();
 
@@ -13,6 +13,7 @@ app.use((req, res, next) => {
 });
 
 app.use(express.json());
-app.use("/", mailRoute);
+
+app.use(mailRoutes);
 
 module.exports = app;

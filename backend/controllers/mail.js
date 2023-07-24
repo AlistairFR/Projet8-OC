@@ -1,36 +1,33 @@
 const nodemailer = require ("nodemailer");
-//const Contactform = require ("../../frontend/src/components/ContactForm");
 
-//let form = Contactform.getElementById("contact-form");
-//formData = new FormData(ContactForm);
+exports.sendEmail = (req, res) => {
+    const { name, email, subject, message } = req.body;
 
-//let name = form.name.value;
-//let surname = req.body.surname;
-//let email = req.body.email;
-//let subject = req.body.subject;
-//let message = req.body.message;
-exports.main = async (req, res) => {
-const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
-    }
-});
+    //Création d'un transporteur Nodemailer en utilisant un compte Gmail
+    const transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+            user: process.env.EMAIL_USER,
+            pass: process.env.EMAIL_PASS,
+        }
+    });
 
-const mailOptions = {
-    from: 'contact.passionsfrance@gmail.com',
-    to: 'passionsfrance@gmail.com',
-    subject: "sujet",             //         subject + ' SENT BY: ' + name + ' ' + surname,
-    text: 'message'
-};
+    //Options du mail
+    const mailOptions = {
+        from: 'contact.passionsfrance@gmail.com',
+        to: 'passionsfrance@gmail.com',
+        subject: `Mail du formulaire - ${subject}`,
+        text: `Nom: ${name}\nEmail: ${email}\n\n${message}`
+    };
 
-transporter.sendMail(mailOptions, function(err, mail) {
-    if (err) {
-        console.log(err);
-    } else {
-        console.log("Email sent: " + mail.response);
-    }
-    res.redirect("/");
-})
+    // Envoi de l'email
+    transporter.sendMail(mailOptions, function(error, info) {
+        if (error) {
+            console.error("Error sending email:", error);
+            res.status(500).json({ message: "Error sending email" });
+          } else {
+            console.log("Email sent:", info.response);
+            res.json({ message: "Email sent successfully" });
+          }
+    });
 };
