@@ -28,7 +28,7 @@ function ContactForm() {
 
 
         // Call the API endpoint to send the form data to the server
-        fetch("/send-email", {
+        fetch("http://localhost:4000/send-email", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -55,7 +55,7 @@ function ContactForm() {
                             type="text"
                             name="name"
                             id="name"
-                            placeholder="Nom"
+                            placeholder="Nom complet"
                             value={formData.name}
                             onChange={handleChange}
                         />

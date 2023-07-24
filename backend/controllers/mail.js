@@ -12,8 +12,8 @@ exports.sendEmail = (req, res) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: process.env.EMAIL_USER,
-            pass: process.env.EMAIL_PASS,
+            user: 'contact.passionsfrance@gmail.com',
+            pass: 'zbxbjxjmuhjtgceh',
         }
     });
 
@@ -21,7 +21,7 @@ exports.sendEmail = (req, res) => {
     const mailOptions = {
         from: 'contact.passionsfrance@gmail.com',
         to: 'passionsfrance@gmail.com',
-        subject: `Mail du formulaire - ${subject}`,
+        subject: `Formulaire - ${subject}`,
         text: `Nom: ${name}\nEmail: ${email}\n\n${message}`
     };
 
