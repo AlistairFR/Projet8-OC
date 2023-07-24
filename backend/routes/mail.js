@@ -2,7 +2,7 @@ const express = require ("express");
 const router = express.Router();
 const mailController = require("../controllers/mail");
 
-router.post('/sendemail', mailController.sendEmail);
+router.post('/send-email', mailController.sendEmail);
 
 // Route de test
 router.get("/test", (req, res) => {

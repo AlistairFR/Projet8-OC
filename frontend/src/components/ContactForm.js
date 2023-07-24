@@ -28,7 +28,7 @@ function ContactForm() {
 
 
         // Call the API endpoint to send the form data to the server
-        fetch("/sendemail", {
+        fetch("/send-email", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
