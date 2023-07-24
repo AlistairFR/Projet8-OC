@@ -1,7 +1,7 @@
 const nodemailer = require ("nodemailer");
 
 exports.sendEmail = (req, res) => {
-    const { name, email, subject, message } = req.body;
+    const { email, message, name, subject } = req.body;
 
     //Création d'un transporteur Nodemailer en utilisant un compte Gmail
     const transporter = nodemailer.createTransport({
@@ -21,7 +21,7 @@ exports.sendEmail = (req, res) => {
     };
 
     // Envoi de l'email
-    transporter.sendMail(mailOptions, function(error, info) {
+    transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
             console.error("Error sending email:", error);
             res.status(500).json({ message: "Error sending email" });
