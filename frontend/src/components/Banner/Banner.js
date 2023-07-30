@@ -1,11 +1,13 @@
+import './Banner.scss'
+
 function Banner() {
     return (
-        <div>
-            <div>
+        <div className='banner-container'>
+            <div className="banner-titles">
                 <h1>Winckel Jean-Baptiste</h1>
                 <h2>Développeur Web Junior</h2>
             </div>
-            <div>
+            <div className="banner-button">
                 <button>Commencer</button>
             </div>
         </div>

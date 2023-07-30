@@ -1,25 +1,4 @@
-#landingBanner {
-    position: relative;
-    text-align: center;
-}
-
-#landingBannerTextContainer {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#landingBannerTitle {
-    color: #ebe7d8;
-    font-size: 100px;
-    margin-bottom: 0;
-}
-
-#landingBannerDescription {
-    color: #ebe7d8;
-}
-
-#landingBannerImage {
-    width: 100%;
+main {
+    margin-left: 18px;
+    margin-right: 18px;
 }

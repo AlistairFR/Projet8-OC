@@ -1,9 +1,9 @@
 {
-  "short_name": "Passions France",
-  "name": "Passions France",
+  "short_name": "Portfolio Winckel Jean-Baptiste",
+  "name": "Portfolio Winckel Jean-Baptiste",
   "icons": [
     {
-      "src": "/logo3.png",
+      "src": "/wj-logo.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }

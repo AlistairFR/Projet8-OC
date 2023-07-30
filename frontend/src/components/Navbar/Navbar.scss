@@ -1,27 +1,25 @@
 nav {
     display: flex;
     justify-content: space-between;
-    height: 150px;
+    height: 60px;
 
-    .navbar-portrait-container {
+    .navbar-open {
         display: flex;
-        flex-direction: row;
         align-items: center;
+        justify-content: center;
+
+        .navbar-button {
+            padding-left: 18px;
+        }
     }
 
-    .navbar-image {
-        height: 100%;
-        width: 150px;
-        object-fit: cover;
-        border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
-    }
+    .navbar-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-    .navbar-name {
-        display: inline;
-        vertical-align: middle;
+        .navbar-link {
+            margin-right: 18px;
+        }
     }
 }

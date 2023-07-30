@@ -8,13 +8,13 @@ function Navbar() {
     return (
         <nav id='navbar'>
             <div className="navbar-open">
-                <i class="fa-solid fa-bars"></i>
+                <i className="fa-solid fa-bars fa-2xl navbar-button"></i>
             </div>
             <div className="navbar-links">
                 <Link className={
                     location.pathname === '/'
-                        ? 'active NavBar-Links'
-                        : 'NavBar-Links'
+                        ? 'active navbar-link'
+                        : 'navbar-link'
                     }
                     to="#navbar"
                 >
@@ -22,8 +22,8 @@ function Navbar() {
                 </Link>
                 <Link className={
                     location.pathname === '/'
-                        ? 'active NavBar-Links'
-                        : 'NavBar-Links'
+                        ? 'active navbar-link'
+                        : 'navbar-link'
                     }
                     to="#about"
                 >
@@ -31,8 +31,8 @@ function Navbar() {
                 </Link>
                 <Link className={
                     location.pathname === '/'
-                        ? 'active NavBar-Links'
-                        : 'NavBar-Links'
+                        ? 'active navbar-link'
+                        : 'navbar-link'
                     }
                     to="#projects"
                 >
