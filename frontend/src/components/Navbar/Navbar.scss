@@ -10,10 +10,6 @@ nav {
         display: flex;
         align-items: center;
         justify-content: center;
-
-        .navbar-button {
-            padding-left: 18px;
-        }
     }
 
     .navbar-links {
@@ -22,7 +18,7 @@ nav {
         justify-content: center;
 
         .navbar-link {
-            margin-right: 18px;
+            margin-left: 18px;
         }
     }
 }
