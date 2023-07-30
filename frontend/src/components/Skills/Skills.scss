@@ -6,4 +6,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+
+    .skills-grid {
+        height: 80%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .skill {
+            text-align: center;
+            height: 20px;
+        }
+    }
 }
