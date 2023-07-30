@@ -1,17 +1,14 @@
 import {useLocation} from 'react-router-dom';
 import {HashLink as Link} from 'react-router-hash-link';
 
-import portrait from '../images/portrait.jpg';
-
 import "../styles/Navbar.scss";
 
 function Navbar() {
     const location = useLocation();
     return (
         <nav id='navbar'>
-            <div className="navbar-portrait-container">
-                <img className='navbar-image' alt='portrait' src={portrait}/>
-                <p className='navbar-name'>WINCKEL Jean-Baptiste</p>
+            <div className="navbar-open">
+                <i class="fa-solid fa-bars"></i>
             </div>
             <div className="navbar-links">
                 <Link className={
