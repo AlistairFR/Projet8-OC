@@ -1,8 +1,10 @@
+import './About.scss'
+
 function About() {
     return(
-        <div>
+        <div className="about-container">
             <div>Composant Animé</div>
-            <div>
+            <div className="about-content">
                 <h3>A propos de moi</h3>
                 <p>lorem ipsum</p>
                 <button>Télécharger mon CV</button>
