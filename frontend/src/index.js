@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Landing from './pages/Landing';
+import Error from "./pages/Error";
 import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/Navbar';
 import './index.css';
@@ -13,7 +14,7 @@ root.render(
       <Navbar />
       <Routes>
         <Route path="/" element={<Landing />}></Route>
-        <Route path="*"></Route>
+        <Route path="*" element={<Error />}></Route>
       </Routes>
       <Footer />
     </Router>
