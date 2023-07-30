@@ -16,7 +16,7 @@ function Navbar() {
                         ? 'active navbar-link'
                         : 'navbar-link'
                     }
-                    to="#navbar"
+                    to="#top"
                 >
                     ACCUEIL
                 </Link>
