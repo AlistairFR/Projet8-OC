@@ -1,9 +1,11 @@
+import Banner from '../components/Banner'
+
 import '../styles/Main.scss'
 
 function Main() {
     return (
         <main className="main">
-            Landing
+            <Banner />
         </main>
     )
 }
