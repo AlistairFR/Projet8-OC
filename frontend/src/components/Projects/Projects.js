@@ -2,7 +2,7 @@ import './Projects.scss'
 
 function Projects() {
     return(
-        <div className="projects-container">
+        <div className="projects-container" id='projects'>
             <h3>Mes projets</h3>
             <div className="projects-grid">
                 <div>Project Card</div>

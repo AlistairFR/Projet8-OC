@@ -38,6 +38,15 @@ function Navbar() {
                 >
                     PROJETS
                 </Link>
+                <Link className={
+                    location.pathname === '/'
+                        ? 'active navbar-link'
+                        : 'navbar-link'
+                    }
+                    to="#contact-form"
+                >
+                    CONTACT
+                </Link>
             </div>
         </nav>
     )
