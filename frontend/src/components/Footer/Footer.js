@@ -1,5 +1,5 @@
-import "../styles/Footer.scss"
-import ContactForm from "./ContactForm"
+import "./Footer.scss"
+import ContactForm from "../ContactForm/ContactForm"
 
 function Footer() {
     return (

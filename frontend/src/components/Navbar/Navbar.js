@@ -1,7 +1,7 @@
 import {useLocation} from 'react-router-dom';
 import {HashLink as Link} from 'react-router-hash-link';
 
-import "../styles/Navbar.scss";
+import "./Navbar.scss";
 
 function Navbar() {
     const location = useLocation();

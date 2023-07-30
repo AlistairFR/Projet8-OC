@@ -1,7 +1,7 @@
-import Banner from '../components/Banner'
-import About from '../components/About'
-import Skills from '../components/Skills'
-import Projects from '../components/Projects'
+import Banner from '../components/Banner/Banner'
+import About from '../components/About/About'
+import Skills from '../components/Skills/Skills'
+import Projects from '../components/Projects/Projects'
 
 import '../styles/Main.scss'
 
