@@ -19,6 +19,8 @@ mongoose.connect(`mongodb+srv://${process.env.MONGOOSE_USER}:${process.env.MONGO
 app.use(cors({ origin: "http://localhost:3000" }));
 app.use(express.json());
 
+
+
 app.use(mailRoutes);
 
 module.exports = app;
