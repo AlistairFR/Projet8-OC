@@ -5,6 +5,8 @@ const cors = require("cors");
 require('dotenv').config();
 
 const mailRoutes = require("./routes/mail");
+const projectsRoutes = require("./routes/projects");
+const skillsRoutes = require("./routes/skills");
 
 const app = express();
 
@@ -19,8 +21,9 @@ mongoose.connect(`mongodb+srv://${process.env.MONGOOSE_USER}:${process.env.MONGO
 app.use(cors({ origin: "http://localhost:3000" }));
 app.use(express.json());
 
-
-
 app.use(mailRoutes);
+app.use(projectsRoutes);
+app.use(skillsRoutes);
+
 
 module.exports = app;
