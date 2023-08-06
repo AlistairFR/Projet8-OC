@@ -5,4 +5,4 @@ const skillSchema = mongoose.Schema({
     percentage : { type: Number, required: true}
 });
 
-module.exports = mongoose.model("Skill", skillSchema);
+module.exports = mongoose.model("skills", skillSchema);

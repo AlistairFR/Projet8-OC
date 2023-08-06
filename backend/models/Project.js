@@ -6,4 +6,4 @@ const projectSchema = mongoose.Schema({
     imageUrl : { type: String, required: true}
 });
 
-module.exports = mongoose.model("Project", projectSchema);
+module.exports = mongoose.model("projects", projectSchema);
