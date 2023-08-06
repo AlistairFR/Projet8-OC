@@ -10,9 +10,10 @@ import Projects from '../components/Projects/Projects'
 function Main() {
     const [projects, setProjects] = useState(null);
     const [skills, setSkills] = useState(null);
-    const [loading, setLoading] = useState(true);
+    const [skillsLoading, setSkillsLoading] = useState(true);
+    const [projectsLoading, setProjectsLoading] = useState(true);
 
-    const displayBooks = () => (projects ? projects.map((project) => <ProjectCard project={project} key={project._id} />) : <h1>Vide</h1>);
+    const displayProjects = () => (projects ? projects.map((project) => <ProjectCard project={project} key={project._id} />) : <h1>Vide</h1>);
     const displaySkills = () => (skills ? skills.map((skill) => <Skills skill={skill} key={skill._id} />) : <h1>Vide</h1>);
 
     useEffect(() => {
@@ -20,7 +21,7 @@ function Main() {
           const data = await getProjects();
           if (data) {
             setProjects(data);
-            setLoading(false);
+            setProjectsLoading(false);
           }
         }
         getProjectsList();
@@ -31,7 +32,7 @@ function Main() {
           const data = await getSkills();
           if (data) {
             setSkills(data);
-            setLoading(false);
+            setSkillsLoading(false);
           }
         }
         getSkillsList();
@@ -41,7 +42,13 @@ function Main() {
         <main className="main">
             <Banner />
             <About />
+            <section className='skills-section'>
+              {skillsLoading ? <h3>Chargement des compétences</h3> : displaySkills()}
+            </section>
             <Skills />
+            <section className='projects-section'>
+              {projectsLoading ? <h3>Chargement des projets</h3> : displayProjects()}
+            </section>
             <Projects />
         </main>
     )
