@@ -4,7 +4,7 @@ import {getProjects, getSkills} from "../lib/common";
 import Banner from '../components/Banner/Banner'
 import About from '../components/About/About'
 import Skills from '../components/Skills/Skills'
-import ProjectCard from '../components/Projects/ProjectCard'
+import ProjectCard from '../components/ProjectCard/ProjectCard'
 import Projects from '../components/Projects/Projects'
 
 function Main() {
