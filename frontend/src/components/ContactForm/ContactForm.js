@@ -62,6 +62,7 @@ function ContactForm() {
                             placeholder="Nom complet"
                             value={formData.name}
                             onChange={handleChange}
+                            required
                         />
                     </div>
                 </div>
@@ -75,6 +76,7 @@ function ContactForm() {
                             placeholder="Email"
                             value={formData.email}
                             onChange={handleChange}
+                            required
                         />
                     </div>
                 </div>
@@ -88,6 +90,7 @@ function ContactForm() {
                             placeholder="Sujet"
                             value={formData.subject}
                             onChange={handleChange}
+                            required
                         />
                     </div>
                 </div>
@@ -100,6 +103,7 @@ function ContactForm() {
                             placeholder="Votre message"
                             value={formData.message}
                             onChange={handleChange}
+                            required
                         />
                     </div>
                 </div>
