@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import Modal from "react-modal";
 
 function ContactForm() {
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -47,7 +50,8 @@ function ContactForm() {
       };
 
     return (
-        <form className="footer-form" id="contact-form" onSubmit={handleSubmit}>
+        <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
+            <form className="footer-form" id="contact-form" onSubmit={handleSubmit}>
                 <div className="form-names">
                     <div>
                         <label>Nom Complet</label>
@@ -101,6 +105,7 @@ function ContactForm() {
                 </div>
                 <button type="submit" name="form-submit" id="form-submit">Envoyer mon message</button>
             </form>
+        </Modal>
     )
 }
 
