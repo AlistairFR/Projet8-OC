@@ -1,5 +1,4 @@
 import "./Footer.scss"
-import ContactForm from "../ContactForm/ContactForm"
 
 function Footer() {
     return (
@@ -10,7 +9,6 @@ function Footer() {
                     N'hésitez pas à me contacter via ce formulaire !
                 </div>
             </div>
-            <ContactForm />
         </footer>
     )
 }

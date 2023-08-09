@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 
-function ContactForm() {
-    const [modalIsOpen, setModalIsOpen] = useState(false);
-
+function ContactForm({ modalIsOpen, setModalIsOpen }) {
     const [formData, setFormData] = useState({
         name: "",
         email: "",

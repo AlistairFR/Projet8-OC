@@ -1,9 +1,14 @@
+import React, { useState } from "react";
 import {useLocation} from 'react-router-dom';
 import {HashLink as Link} from 'react-router-hash-link';
+import ContactForm from "../ContactForm/ContactForm";
+import ModalButton from "../ModalButton/ModalButton";
 
 import "./Navbar.scss";
 
 function Navbar() {
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+
     const location = useLocation();
     return (
         <nav id='navbar'>
@@ -38,16 +43,9 @@ function Navbar() {
                 >
                     PROJETS
                 </Link>
-                <Link className={
-                    location.pathname === '/'
-                        ? 'active navbar-link'
-                        : 'navbar-link'
-                    }
-                    to="#contact-form"
-                >
-                    CONTACT
-                </Link>
+                <ModalButton setModalIsOpen={setModalIsOpen} />
             </div>
+            <ContactForm modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen}/>
         </nav>
     )
 }
