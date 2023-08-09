@@ -5,7 +5,7 @@ import ProjectCard from '../ProjectCard/ProjectCard';
 
 import './Projects.scss'
 
-export async function getProjects() {
+async function getProjects() {
     try {
       const response = await axios({
         method: 'GET',
