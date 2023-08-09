@@ -19,17 +19,6 @@ function ContactForm() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        /* //Test request to test connection between front and back
-        fetch("/test")
-        .then((response) => response.json())
-        .then((data) => {
-          console.log(data);
-        })
-        .catch((error) => {
-          console.error("Error:", error);
-        }); */
-
-
         // Call the API endpoint to send the form data to the server
         fetch("http://localhost:4000/send-email", {
           method: "POST",
