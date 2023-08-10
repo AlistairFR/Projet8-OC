@@ -1,8 +1,10 @@
 import React from "react";
 
+import "./ModalButton.scss"
+
 function OpenButton({ setModalIsOpen }) {
   return (
-    <button onClick={() => setModalIsOpen(true)}>CONTACT</button>
+    <span onClick={() => setModalIsOpen(true)}>CONTACT</span>
   );
 }
 
