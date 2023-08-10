@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 
+import './ContactForm.scss'
+
 function ContactForm({ modalIsOpen, setModalIsOpen }) {
     const [formData, setFormData] = useState({
         name: "",
@@ -37,7 +39,7 @@ function ContactForm({ modalIsOpen, setModalIsOpen }) {
       };
 
     return (
-        <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
+        <Modal portalClassName='modale' isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} ariaHideApp={false}>
             <form className="footer-form" id="contact-form" onSubmit={handleSubmit}>
                 <div className="form-names">
                     <div>
