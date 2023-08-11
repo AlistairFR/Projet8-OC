@@ -9,6 +9,7 @@
     justify-content: center;
 
     .banner-titles {
+      user-select: none;
       box-sizing: border-box;
       position: relative;
       color: antiquewhite;
@@ -31,6 +32,10 @@
         overflow: hidden;
         position: relative;
         width: 70%;
+
+        span {
+          cursor: default;
+        }
 
         .message {
           background-color: rgb(59, 224, 169);
@@ -122,6 +127,7 @@
         top: 30%;
 
         button,button::after {
+            cursor: pointer;
             padding: 10px 50px;
             font-size: 20px;
             border: 1px solid transparent;
