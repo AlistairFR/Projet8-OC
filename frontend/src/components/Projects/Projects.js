@@ -26,7 +26,7 @@ function Projects() {
     const [projects, setProjects] = useState(null);
     const [projectsLoading, setProjectsLoading] = useState(true);
 
-    const displayProjects = () => (projects ? projects.map((project) => <ProjectCard project={project} key={project._id} />) : <h1>Vide</h1>);
+    const displayProjects = () => (projects ? projects.map((project) => <ProjectCard project={project}/>) : <h1>Vide</h1>);
 
     useEffect(() => {
         async function getProjectsList() {
