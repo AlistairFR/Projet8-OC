@@ -32,17 +32,18 @@
         width: 70%;
 
         .message {
-          background-color: yellow;
+          background-color: rgb(59, 224, 169);
           color: #333;
           display: block;
           font-weight: 900;
           overflow: hidden;
           position: absolute;
-          padding-left: 0.8rem;
+          padding-left: 0.5rem;
           top: 0.2rem;
           left: 260px;
-          animation: openclose 5s ease-in-out infinite;
-        }
+          animation: openclose 7s ease-in-out infinite;
+          -webkit-animation: openclose 7s ease-in-out infinite;
+}
 
         .word1, .word2, .word3 {
           font-family: tahoma;
@@ -50,60 +51,60 @@
 
         @keyframes openclose {
           0% {
-            top: 0.2rem;
+            top: -0.1rem;
             width: 0;
           }
           5% {
             width: 0;
           }
           15% {
-            width: 230px;
+            width: 100px;
           }
           30% {
-            top: 0.2rem;
-            width: 230px;
+            top: -0.1rem;
+            width: 100px;
           }
           33% {
-            top: 0.2rem;
+            top: -0.1rem;
             width: 0;
           }
           35% {
-            top: 0.2rem;
+            top: -2.7rem;
             width: 0;
           }
           38% {
-            top: -4.5rem;
+            top: -2.7rem;
           }
           48% {
-            top: -4.5rem;
-            width: 190px;
+            top: -2.7rem;
+            width: 120px;
           }
           62% {
-            top: -4.5rem;
-            width: 190px;
+            top: -2.7rem;
+            width: 120px;
           }
           66% {
-            top: -4.5rem;
+            top: -2.7rem;
             width: 0;
-            text-indent: 0;
+            text-indent: 0px;
           }
           71% {
-            top: -9rem;
+            top: -5.5rem;
             width: 0;
-            text-indent: 5px;
+            text-indent: 0px;
           }
           86% {
-            top: -9rem;
-            width: 285px;
+            top: -5.5rem;
+            width: 160px;
           }
           95% {
-            top: -9rem;
-            width: 285px;
+            top: -5.5rem;
+            width: 160px;
           }
           98% {
-            top: -9rem;
+            top: -5.5rem;
             width: 0;
-            text-indent: 5px;
+            text-indent: 0px;
           }
           100% {
             top: 0;

@@ -3,6 +3,7 @@ html {
 }
 
 nav {
+    color: antiquewhite;
     display: flex;
     justify-content: space-between;
     height: 60px;
@@ -24,7 +25,7 @@ nav {
         .navbar-link {
             margin-left: 18px;
             text-decoration: none;
-            color: black;
+            color: antiquewhite;
         }
     }
 }
