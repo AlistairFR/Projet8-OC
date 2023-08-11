@@ -8,14 +8,24 @@ import "./Navbar.scss";
 
 function Navbar() {
     const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [navbarIsOpen, setNavbarIsOpen] = useState(false);
 
     const location = useLocation();
     return (
         <nav id='navbar'>
             <div className="navbar-open">
-                <i className="fa-solid fa-bars fa-2xl navbar-button"></i>
+                <i className={
+                    navbarIsOpen
+                        ? "fa-solid fa-bars fa-2xl navbar-button open"
+                        : "fa-solid fa-bars fa-2xl navbar-button"
+                } onClick={() => setNavbarIsOpen(!navbarIsOpen)}></i>
             </div>
-            <div className="navbar-links">
+            <div className={
+                navbarIsOpen
+                    ? "navbar-links open"
+                    : "navbar-links"
+                    }
+                >
                 <Link className={
                     location.pathname === '/'
                         ? 'active navbar-link'

@@ -9,6 +9,7 @@
     justify-content: center;
 
     .banner-titles {
+      box-sizing: border-box;
       position: relative;
       color: antiquewhite;
       display: flex;
@@ -123,7 +124,7 @@
         button,button::after {
             padding: 10px 50px;
             font-size: 20px;
-            border: none;
+            border: 1px solid transparent;
             border-radius: 5px;
             color: white;
             background-color: transparent;
