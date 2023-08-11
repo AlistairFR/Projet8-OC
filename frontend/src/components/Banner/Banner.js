@@ -8,7 +8,7 @@ function Banner() {
                 <h2>Développeur Web Junior</h2>
             </div>
             <div className="banner-button">
-                <button>Commencer</button>
+                <button>COMMENCER</button>
             </div>
         </div>
     )
