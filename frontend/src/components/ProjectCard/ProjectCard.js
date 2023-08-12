@@ -1,4 +1,5 @@
 import './ProjectCard.scss'
+import '../../images/portrait.jpg'
 
 function ProjectCard({ project }) {
     const replace = project.title.replace(/\s+/g, '');

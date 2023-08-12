@@ -2,13 +2,17 @@ import { gsap } from 'gsap'
 
 import './SkillBar.scss'
 
+gsap.config({
+    nullTargetWarn: false
+})
+
 function SkillBar({ skill }) {
     //Animation gsap de la progress bar
-    gsap.fromTo('.progress-value', {width: 0}, {
-        width: `95%`,
+        gsap.fromTo('.progress-value', {width: 0}, {
+        width: `${skill.percentage}%`,
         duration: 2.5,
         ease: "power3.out",
-    });
+        });
 
     return (
         <article className='skill-container'>

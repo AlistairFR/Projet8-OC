@@ -11,8 +11,6 @@ async function getProjects() {
         method: 'GET',
         url: 'http://localhost:4000/projects',
       });
-      console.log("getProjects DATA");
-      console.log(response.data);
       const projects = formatObject(response.data);
       return projects;
     } catch (err) {

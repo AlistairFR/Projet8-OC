@@ -11,8 +11,6 @@ async function getSkills() {
         method: 'GET',
         url: 'http://localhost:4000/skills',
       });
-      console.log("getSkills DATA");
-      console.log(response.data);
       const skills = formatObject(response.data);
       return skills;
     } catch (err) {
