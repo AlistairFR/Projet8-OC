@@ -1,8 +1,12 @@
+import './SkillBar.scss'
+
 function SkillBar({ skill }) {
     return (
-        <article>
+        <article className='skill-container'>
             <h4>{skill.title}</h4>
-            <p>{skill.percentage}</p>
+            <div className='progress'>
+                <div className="progress-value">{skill.percentage}</div>
+            </div>
         </article>
     )
 }
