@@ -27,8 +27,7 @@ function Skills() {
       if (skills) {
         const skillBars = [];
         for (let i = 0; i < skills.length; i++) {
-          const skillId = `skill-${skills[i]._id}`;
-          skillBars.push(<SkillBar skill={skills[i]} skillId={skillId} key={skills[i].id} />);
+          skillBars.push(<SkillBar skill={skills[i]} key={skills[i].id} />);
         }
         return skillBars;
       } else {
