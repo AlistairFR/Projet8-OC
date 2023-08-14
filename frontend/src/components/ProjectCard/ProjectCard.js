@@ -1,13 +1,13 @@
 import './ProjectCard.scss'
-import '../../images/portrait.jpg'
 
 function ProjectCard({ project }) {
     const replace = project.title.replace(/\s+/g, '');
+    const imageUrl = `${process.env.PUBLIC_URL}${project.imageUrl}`
     return (
         <article className={replace}>
             <h4>{project.title}</h4>
             <p>{project.desc}</p>
-            <img src={project.imageUrl} alt="image non affichée" />
+            <img src={imageUrl} alt="image non affichée" />
         </article>
     )
 }

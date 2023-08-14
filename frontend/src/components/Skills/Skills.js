@@ -23,7 +23,18 @@ function Skills() {
     const [skills, setSkills] = useState(null);
     const [skillsLoading, setSkillsLoading] = useState(true);
 
-    const displaySkills = () => (skills ? skills.map((skill) => <SkillBar skill={skill} key={skill._id} />) : <h1>Vide</h1>);
+    const displaySkills = () => {
+      if (skills) {
+        const skillBars = [];
+        for (let i = 0; i < skills.length; i++) {
+          const skillId = `skill-${skills[i]._id}`;
+          skillBars.push(<SkillBar skill={skills[i]} skillId={skillId} key={skills[i].id} />);
+        }
+        return skillBars;
+      } else {
+        return <h1>Vide</h1>;
+      }
+    };
 
     useEffect(() => {
         async function getSkillsList() {
