@@ -1,7 +1,7 @@
 body {
   background-image: url("../public/images/landing-banner.jpg");
   background-attachment: fixed;
-  background-size: contain;
+  background-size: cover;
   color: antiquewhite;
   margin: 0;
   background-color: #ffffff;

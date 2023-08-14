@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {useLocation} from 'react-router-dom';
 import {HashLink as Link} from 'react-router-hash-link';
-import { gsap } from "gsap";
 
 import ContactForm from "../ContactForm/ContactForm";
 import ModalButton from "../ModalButton/ModalButton";
@@ -14,7 +13,11 @@ function Navbar() {
 
     const location = useLocation();
     return (
-        <nav id='navbar'>
+        <nav id='navbar' className={
+            navbarIsOpen
+                ? "navbar open"
+                : "navbar"
+                }>
             <div className="navbar-open">
                 <i className={
                     navbarIsOpen

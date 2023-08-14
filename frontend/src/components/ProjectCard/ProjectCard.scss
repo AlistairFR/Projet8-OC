@@ -1,11 +1,19 @@
 .projects-grid article {
     background-color: #22303b;
+    opacity: 1;
     box-shadow: 0 10px 40px -10px #fff;
     position: relative;
 
-    h4, p {
-        position: relative;
+    .project-text {
+        position: absolute;
+        bottom: 0;
         z-index: 1;
+        background-color: #22303b;
+        width: 100%;
+    }
+
+    .project-text:hover {
+        height: 100%;
     }
 
     img {
@@ -19,3 +27,4 @@
         z-index: 0;
     }
 }
+

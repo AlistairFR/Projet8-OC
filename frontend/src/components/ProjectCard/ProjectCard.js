@@ -5,8 +5,10 @@ function ProjectCard({ project }) {
     const imageUrl = `${process.env.PUBLIC_URL}${project.imageUrl}`
     return (
         <article className={replace}>
-            <h4>{project.title}</h4>
-            <p>{project.desc}</p>
+            <div className="project-text">
+                <h4>{project.title}</h4>
+                <p>{project.desc}</p>
+            </div>
             <img src={imageUrl} alt={project.title} />
         </article>
     )
