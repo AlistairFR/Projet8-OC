@@ -1,6 +1,5 @@
 .projects-grid article {
     background-color: #22303b;
-    opacity: 1;
     box-shadow: 0 10px 40px -10px #fff;
     position: relative;
 
@@ -8,7 +7,7 @@
         position: absolute;
         bottom: 0;
         z-index: 1;
-        background-color: #22303b;
+        background-color: rgb(34, 48, 59, 0.8);
         width: 100%;
     }
 
