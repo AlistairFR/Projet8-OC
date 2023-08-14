@@ -1,4 +1,21 @@
 .projects-grid article {
     background-color: #22303b;
     box-shadow: 0 10px 40px -10px #fff;
+    position: relative;
+
+    h4, p {
+        position: relative;
+        z-index: 1;
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-position: bottom;
+        z-index: 0;
+    }
 }
