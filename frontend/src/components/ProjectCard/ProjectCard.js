@@ -7,7 +7,7 @@ function ProjectCard({ project }) {
         <article className={replace}>
             <h4>{project.title}</h4>
             <p>{project.desc}</p>
-            <img src={imageUrl} alt="image non affichée" />
+            <img src={imageUrl} alt={project.title} />
         </article>
     )
 }
