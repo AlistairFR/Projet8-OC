@@ -9,10 +9,22 @@
         z-index: 1;
         background-color: rgb(34, 48, 59, 0.8);
         width: 100%;
+
+        .project-descLong {
+            display: none;
+        }
     }
 
     .project-text:hover {
         height: 100%;
+
+        .project-desc {
+            display: none;
+        }
+
+        .project-descLong {
+            display: inline;
+        }
     }
 
     img {

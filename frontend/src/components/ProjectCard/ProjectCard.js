@@ -7,7 +7,8 @@ function ProjectCard({ project }) {
         <article className={replace}>
             <div className="project-text">
                 <h4>{project.title}</h4>
-                <p>{project.desc}</p>
+                <p className='project-desc'>{project.desc}</p>
+                <p className='project-descLong'>{project.descLong}</p>
             </div>
             <img src={imageUrl} alt={project.title} />
         </article>
