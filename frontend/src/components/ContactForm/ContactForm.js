@@ -3,24 +3,6 @@ import Modal from "react-modal";
 
 import './ContactForm.scss'
 
-const modalStyle = {
-    content: {
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      boxShadow: 'rgba(100, 100, 111, 0.3) 0px 7px 29px 0px',
-      backgroundColor: 'white',
-      border: '2px solid rgb(240, 240, 240)',
-      borderRadius: '12px',
-      position: 'absolute',
-      height: 'fit-content',
-      width: '300px',
-      top: '120px',
-      left: 'calc(50% - 150px)'
-    }
-}
-
 function ContactForm({ modalIsOpen, setModalIsOpen }) {
     const [formData, setFormData] = useState({
         name: "",
@@ -57,7 +39,7 @@ function ContactForm({ modalIsOpen, setModalIsOpen }) {
       };
 
     return (
-        <Modal style={modalStyle} isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
+        <Modal className="ReactModal__Content" overlayClassName="ReactModal__Overlay" isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
             <form className="footer-form" id="contact-form" onSubmit={handleSubmit}>
                 <div className="form-names">
                     <div>
