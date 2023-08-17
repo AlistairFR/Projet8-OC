@@ -20,7 +20,7 @@ function ContactForm({ modalIsOpen, setModalIsOpen }) {
         e.preventDefault();
 
         // Call the API endpoint to send the form data to the server
-        fetch("http://localhost:4000/send-email", {
+        fetch("/send-email", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
