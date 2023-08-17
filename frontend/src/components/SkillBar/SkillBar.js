@@ -3,8 +3,10 @@ import './SkillBar.scss'
 function SkillBar({ skill }) {
     return (
         <article className='skill-container'>
-            <i className={skill.imageUrl}></i>
-            <h4>{skill.title}</h4>
+            <div className="skill-inset">
+                <i className={skill.imageUrl}></i>
+                <h4>{skill.title}</h4>
+            </div>
         </article>
     )
 }
