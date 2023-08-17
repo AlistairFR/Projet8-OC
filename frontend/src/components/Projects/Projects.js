@@ -9,7 +9,7 @@ async function getProjects() {
     try {
       const response = await axios({
         method: 'GET',
-        url: 'http://localhost:4000/projects',
+        url: 'winckel-dev.fr/projects',
       });
       const projects = formatObject(response.data);
       return projects;

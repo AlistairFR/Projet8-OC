@@ -9,7 +9,7 @@ async function getSkills() {
     try {
       const response = await axios({
         method: 'GET',
-        url: 'http://localhost:4000/skills',
+        url: 'winckel-dev.fr/skills',
       });
       const skills = formatObject(response.data);
       return skills;
