@@ -17,6 +17,11 @@
         height: calc(100% - 52px);
         padding: 26px;
         padding-left: 65px;
+        user-select: none;
+
+        b {
+            color: #3be0a0;
+        }
     }
 
     .about-contact {
