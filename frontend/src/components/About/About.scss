@@ -13,5 +13,47 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        width: 50%;
+        height: calc(100% - 52px);
+        padding: 26px;
+    }
+
+    .about-contact {
+        display: flex;
+        flex-direction: column;
+        padding: 26px;
+        width: 20%;
+        height: calc(100% - 52px);
+
+        button {
+            align-items: center;
+            background-color: #0c1118;
+            border: none;
+            padding: 4px;
+            color: #3be0a0;
+            border-radius: 10%;
+
+            i {
+                margin-right: 14px;
+            }
+        }
+
+        button:hover {
+            color: #0c1118;
+            background-color: #3be0a0;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        li {
+            padding-bottom: 14px;
+            list-style-type: none;
+
+            i {
+                margin-right: 6px;
+            }
+        }
     }
 }
