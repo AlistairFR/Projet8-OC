@@ -4,7 +4,7 @@ import "./ModalButton.scss"
 
 function OpenButton({ setModalIsOpen }) {
   return (
-    <span onClick={() => setModalIsOpen(true)}>CONTACT</span>
+    <span className="navbar-link" onClick={() => setModalIsOpen(true)}>CONTACT</span>
   );
 }
 

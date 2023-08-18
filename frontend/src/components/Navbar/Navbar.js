@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {useLocation} from 'react-router-dom';
 import {HashLink as Link} from 'react-router-hash-link';
+import {gsap} from "gsap";
 
 import ContactForm from "../ContactForm/ContactForm";
 import ModalButton from "../ModalButton/ModalButton";
@@ -10,8 +11,19 @@ import "./Navbar.scss";
 function Navbar() {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [navbarIsOpen, setNavbarIsOpen] = useState(false);
-
     const location = useLocation();
+
+    function NavbarAnimate() {
+        gsap.fromTo(".navbar-link", {
+            x:-400,
+            opacity:0
+        },{
+            x:0,
+            opacity:1,
+            stagger:-0.02
+        })
+    }
+
     return (
         <nav id='navbar' className={
             navbarIsOpen
@@ -23,7 +35,10 @@ function Navbar() {
                     navbarIsOpen
                         ? "fa-solid fa-bars fa-2xl navbar-button open"
                         : "fa-solid fa-bars fa-2xl navbar-button"
-                } onClick={() => setNavbarIsOpen(!navbarIsOpen)}></i>
+                } onClick={() => {
+                    setNavbarIsOpen(!navbarIsOpen);
+                    NavbarAnimate();
+                }}></i>
             </div>
             <div className={
                 navbarIsOpen
