@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const cors = require("cors");
+const cors = require("./middleware/cors.middleware");
 
 require('dotenv').config();
 
@@ -18,7 +18,7 @@ mongoose.connect(`mongodb+srv://${process.env.MONGOOSE_USER}:${process.env.MONGO
   .catch(() => console.log('Connexion à MongoDB échouée !'));
 
 //Permet les requêtes cross-origin depuis n'importe quel domaine
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors);
 app.use(express.json());
 
 app.use(mailRoutes, projectsRoutes, skillsRoutes);
