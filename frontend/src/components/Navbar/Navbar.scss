@@ -23,6 +23,10 @@ nav {
             margin-left: 18px;
         }
 
+        .navbar-button:hover {
+            color: rgb(59, 224, 169);
+        }
+
         .open {
             transform: rotate(180deg);
             -webkit-transform: rotate(180deg);
@@ -38,13 +42,17 @@ nav {
         justify-content: center;
 
         .navbar-link {
-            margin-left: 18px;
+            margin-left: 24px;
             text-decoration: none;
             color: antiquewhite;
         }
 
         .navbar-link:hover {
             color: rgb(59, 224, 169);
+        }
+
+        .navbar-link:active {
+            text-decoration: overline;
         }
     }
 

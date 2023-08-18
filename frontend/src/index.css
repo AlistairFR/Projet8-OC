@@ -1,10 +1,10 @@
 body {
+  background-color: #3d4653;
   background-image: url("../public/images/landing-banner.jpg");
   background-attachment: fixed;
   background-size: cover;
   color: antiquewhite;
   margin: 0;
-  background-color: #ffffff;
   font-family: 'Sora', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
