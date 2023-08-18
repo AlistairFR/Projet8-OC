@@ -40,6 +40,7 @@ nav {
         display: none;
         align-items: center;
         justify-content: center;
+        user-select: none;
 
         .navbar-link {
             margin-left: 24px;
