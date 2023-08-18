@@ -14,9 +14,9 @@ function Banner() {
                     </div>
                 </h2>
             </div>
-            <div className="banner-button">
+            <a href='#about' className="banner-button">
                 <button>COMMENCER</button>
-            </div>
+            </a>
         </div>
     )
 }
