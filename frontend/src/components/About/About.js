@@ -6,13 +6,13 @@ function About() {
             <div className="about-content">
                 <h3>A propos de moi</h3>
                 <p>
-                    👋 &nbsp;Bonjour ! Je suis Jean-Baptiste, un développeur web junior à la recherche de mon premier rôle dans le développement.
+                    👋 &nbsp;Bonjour ! Je suis Jean-Baptiste, un <b>développeur web junior</b> à la recherche de mon premier rôle dans le développement.
                     <br/><br/>
-                    💻 &nbsp;Avec une bonne maîtrise du HTML, CSS, et JavaScript, je suis passionné par la programmation, en particulier celle de jeux vidéos. Je me consacre à l'apprentissage continu des nouvelles technologies.
+                    💻 &nbsp;Avec une bonne maîtrise du HTML, CSS, et JavaScript, je suis <b>passionné</b> par la programmation, en particulier celle de jeux vidéos. Je me consacre à l'<b>apprentissage continu</b> des nouvelles technologies.
                     <br/><br/>
-                    🌟 &nbsp;Je suis impatient de mettre ma créativité et mes compétences au service d'une équipe. Je m'épanouis dans l'apprentissage et je suis enthousiaste à l'idée de participer à des projets qui ont un impact.
+                    🌟 &nbsp;Je suis impatient de mettre ma <b>créativité</b> et mes <b>compétences</b> au service d'une équipe. Je m'épanouis dans l'apprentissage et je suis enthousiaste à l'idée de <b>participer</b> à des projets qui ont un impact.
                     <br/><br/>
-                    🚀 &nbsp;Prêt à m'embarquer dans ce voyage, je cherche une chance d'apprendre, de grandir et de créer des expériences web significatives.
+                    🚀 &nbsp;Prêt à m'embarquer dans ce voyage, je cherche une chance d'<b>apprendre</b>, de <b>grandir</b> et de <b>créer</b> des expériences web significatives.
                     <br/><br/>
                     📧 &nbsp;Contactez-moi et discutons ensemble !
                 </p>
