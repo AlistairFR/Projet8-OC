@@ -42,6 +42,10 @@ nav {
             text-decoration: none;
             color: antiquewhite;
         }
+
+        .navbar-link:hover {
+            color: rgb(59, 224, 169);
+        }
     }
 
     .navbar-links.open {
