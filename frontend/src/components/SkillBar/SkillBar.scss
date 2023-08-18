@@ -23,6 +23,7 @@
     }
 
     .skill-inset:hover {
-        box-shadow: 6px 6px 11px #232a34, -6px -6px 11px #232a34;
+        color: rgb(59, 224, 169);
+        box-shadow: inset 6px 6px 11px rgb(59, 224, 169), inset -6px -6px 11px rgb(59, 224, 169);
     }
 }
