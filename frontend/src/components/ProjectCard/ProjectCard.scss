@@ -13,10 +13,13 @@
         bottom: 0;
         z-index: 1;
         background-color: rgb(34, 48, 59, 0.8);
-        width: 100%;
+        width: calc(100% - 28px);
+        height: 115px;
         overflow: auto;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
+        padding-left: 14px;
+        padding-right: 14px;
 
         .project-descLong {
             display: none;
