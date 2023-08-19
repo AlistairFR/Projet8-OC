@@ -27,8 +27,9 @@
     .about-contact {
         display: flex;
         flex-direction: column;
+        align-items: center;
         padding: 26px;
-        width: 20%;
+        width: 30%;
         height: calc(100% - 52px);
 
         button {
@@ -37,10 +38,13 @@
             border: none;
             padding: 4px;
             color: #3be0a0;
-            border-radius: 10%;
+            width: fit-content;
+            border-radius: 10px;
+            padding-right: 14px;
 
             i {
                 margin-right: 14px;
+                margin-left: 8px;
             }
         }
 
