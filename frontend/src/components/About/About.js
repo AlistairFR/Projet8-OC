@@ -22,17 +22,17 @@ function About() {
                 <ul>
                     <li>
                         <a href="https://www.linkedin.com/in/jean-baptiste-winckel-28b363206" target="_blank" rel="noreferrer">
-                            <i class="fa-brands fa-linkedin" style={{color:"#3be0a9"}}/>
+                            <i className="fa-brands fa-linkedin" style={{color:"#3be0a9"}}/>
                             LinkedIn
                         </a>
                     </li>
                     <li>
                         <a href="https://github.com/AlistairFR?tab=repositories" target="_blank" rel="noreferrer">
-                            <i class="fa-brands fa-github" style={{color:"#3be0a9"}}/>
+                            <i className="fa-brands fa-github" style={{color:"#3be0a9"}}/>
                             GitHub
                         </a>
                     </li>
-                    <li><i class="fa-solid fa-at" style={{color:"#3be0a9"}}/>contact@winckel-dev.fr</li>
+                    <li><i className="fa-solid fa-at" style={{color:"#3be0a9"}}/>contact@winckel-dev.fr</li>
                 </ul>
                 <button><i className="fa-solid fa-download" style={{color: "#3be0a0"}}/>Télécharger mon CV</button>
             </div>
