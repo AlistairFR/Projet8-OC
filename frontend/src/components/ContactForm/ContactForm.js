@@ -40,64 +40,64 @@ function ContactForm({ modalIsOpen, setModalIsOpen }) {
 
     return (
         <Modal className="ReactModal__Content" overlayClassName="ReactModal__Overlay" isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
-            <form className="footer-form" id="contact-form" onSubmit={handleSubmit}>
-                <div className="form-names">
-                    <div>
-                        <label>Nom Complet</label>
-                        <input
-                            type="text"
-                            name="name"
-                            id="name"
-                            placeholder="Nom complet"
-                            value={formData.name}
-                            onChange={handleChange}
-                            required
-                        />
+            <div className="contact-form-container">
+                <h2><b>Contactez moi</b> via ce formulaire</h2>
+                <form className="footer-form" id="contact-form" onSubmit={handleSubmit}>
+                    <div className="form-names">
+                        <div>
+                            <label>Nom complet</label>
+                            <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                value={formData.name}
+                                onChange={handleChange}
+                                required
+                            />
+                        </div>
                     </div>
-                </div>
-                <div>
                     <div>
-                        <label>Email</label>
-                        <input
-                            type="email"
-                            name="email"
-                            id="email"
-                            placeholder="Email"
-                            value={formData.email}
-                            onChange={handleChange}
-                            required
-                        />
+                        <div>
+                            <label>Email</label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                value={formData.email}
+                                onChange={handleChange}
+                                required
+                            />
+                        </div>
                     </div>
-                </div>
-                <div>
                     <div>
-                        <label>Sujet</label>
-                        <input
-                            type="text"
-                            name="subject"
-                            id="subject"
-                            placeholder="Sujet"
-                            value={formData.subject}
-                            onChange={handleChange}
-                            required
-                        />
+                        <div>
+                            <label>Sujet</label>
+                            <input
+                                type="text"
+                                name="subject"
+                                id="subject"
+                                value={formData.subject}
+                                onChange={handleChange}
+                                required
+                            />
+                        </div>
                     </div>
-                </div>
-                <div>
                     <div>
-                        <label>Votre message</label>
-                        <textarea
-                            name="message"
-                            id="message"
-                            placeholder="Votre message"
-                            value={formData.message}
-                            onChange={handleChange}
-                            required
-                        />
+                        <div>
+                            <label>Message</label>
+                            <textarea
+                                name="message"
+                                id="message"
+                                placeholder="Votre message ici"
+                                value={formData.message}
+                                onChange={handleChange}
+                                required
+                            />
+                        </div>
                     </div>
-                </div>
-                <button type="submit" name="form-submit" id="form-submit">Envoyer mon message</button>
-            </form>
+                    <button type="submit" name="form-submit" id="form-submit">Envoyer</button>
+                </form>
+            </div>
         </Modal>
     )
 }
