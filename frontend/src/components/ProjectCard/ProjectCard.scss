@@ -17,7 +17,7 @@
         padding-left: 14px;
         padding-right: 14px;
 
-        .project-descLong {
+        .project-hidden {
             display: none;
         }
     }
@@ -34,8 +34,34 @@
             display: none;
         }
 
-        .project-descLong {
-            display: inline;
+        .project-hidden {
+            display: flex;
+            flex-direction: column;
+
+            .project-links {
+                width: 95%;
+                margin: auto;
+                display: flex;
+                justify-content: space-evenly;
+                position: absolute;
+                bottom: 18px;
+
+                a {
+                    text-decoration: none;
+                    color: antiquewhite;
+                    font-weight: 700;
+                    cursor: pointer;
+
+                    i {
+                        margin-right: 8px;
+                    }
+                }
+
+                a:hover {
+                    color: #00ffd5;
+                }
+            }
+
         }
     }
 
