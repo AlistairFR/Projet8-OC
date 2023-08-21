@@ -20,6 +20,7 @@ function Navbar() {
         },{
             x:0,
             opacity:1,
+            backgroundColor:"rgb(12, 17, 23, 0.8)",
             stagger:-0.02
         })
     }
