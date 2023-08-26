@@ -12,11 +12,11 @@ function ProjectCard({ project }) {
                     <p className='project-descLong'>{project.descLong}</p>
                     <div className="project-links">
                         <a href={project.repoUrl} target="_blank" rel="noreferrer">
-                            <i class="fa-solid fa-arrow-up-right-from-square" style={{color: "#00ffd5"}}/>
+                            <i className="fa-solid fa-arrow-up-right-from-square" style={{color: "#00ffd5"}}/>
                             Repo GitHub
                         </a>
                         <a href={project.demoUrl} target="_blank" rel="noreferrer">
-                            <i class="fa-solid fa-arrow-up-right-from-square" style={{color: "#00ffd5"}}/>
+                            <i className="fa-solid fa-arrow-up-right-from-square" style={{color: "#00ffd5"}}/>
                             Live demo
                         </a>
                     </div>
