@@ -227,3 +227,87 @@
         }
     }
 }
+
+@media screen and (max-width: 700px) {
+  .banner-titles {
+    h1 {
+      font-size: 2em !important;
+    }
+    h2 {
+      font-size: 1em !important;
+      width: 80% !important;
+
+      .message {
+        font-size: 1em !important;
+        left: 155px !important;
+      }
+    }
+  }
+  button,button::after {
+    font-size: 0.9em !important;
+    padding: 10px 25px !important;
+  }
+  @keyframes openclose {
+    0% {
+      top: -0.0em;
+      width: 0;
+    }
+    5% {
+      width: 0;
+    }
+    15% {
+      width: 60px;
+    }
+    30% {
+      top: -0.0rem;
+      width: 60px;
+    }
+    33% {
+      top: -0.0rem;
+      width: 0;
+    }
+    35% {
+      top: -1.5rem;
+      width: 0;
+    }
+    38% {
+      top: -1.5rem;
+    }
+    48% {
+      top: -1.5rem;
+      width: 70px;
+    }
+    62% {
+      top: -1.5rem;
+      width: 70px;
+    }
+    66% {
+      top: -1.5rem;
+      width: 0;
+      text-indent: 0px;
+    }
+    71% {
+      top: -3rem;
+      width: 0;
+      text-indent: 0px;
+    }
+    86% {
+      top: -3rem;
+      width: 90px;
+    }
+    95% {
+      top: -3rem;
+      width: 90px;
+    }
+    98% {
+      top: -3rem;
+      width: 0;
+      text-indent: 0px;
+    }
+    100% {
+      top: 0;
+      width: 0;
+      text-indent: 0;
+    }
+  }
+}

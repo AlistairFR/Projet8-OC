@@ -29,3 +29,10 @@
         border: 1px solid rgb(0, 255, 213);
     }
 }
+
+@media screen and (max-width: 700px) {
+    .skill-container {
+        min-width: 100px;
+        max-width: 30%;
+    }
+}

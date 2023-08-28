@@ -18,3 +18,15 @@
         justify-content: center;
     }
 }
+
+@media screen and (max-width: 700px) {
+    .skills-container {
+        padding-top: 0;
+    }
+
+    .skills-grid {
+        height: auto !important;
+        display: flex !important;
+        flex-wrap: wrap;
+    }
+}

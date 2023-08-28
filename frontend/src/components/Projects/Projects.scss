@@ -22,3 +22,15 @@
     }
 }
 
+@media screen and (max-width: 700px) {
+    .projects-container {
+        height: auto;
+    }
+    .projects-grid {
+        display: flex !important;
+        flex-direction: column;
+        height: auto;
+        margin-top: 34px;
+    }
+}
+
