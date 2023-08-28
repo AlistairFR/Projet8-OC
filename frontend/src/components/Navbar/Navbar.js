@@ -58,7 +58,7 @@ function Navbar() {
 		return () => {
 			ctx.revert();
 		}
-	}, []);
+	}, [navbarTimeline]);
 
     return (
         <nav id='navbar' className="navbar" ref={navbarRef}>
