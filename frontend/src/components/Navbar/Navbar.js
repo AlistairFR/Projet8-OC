@@ -1,5 +1,4 @@
 import React, { useState, useLayoutEffect, useRef } from "react";
-import {useLocation} from 'react-router-dom';
 import {HashLink as Link} from 'react-router-hash-link';
 import {gsap} from "gsap";
 
@@ -16,17 +15,13 @@ const ForwardedLinkWithRef = React.forwardRef(ForwardedLink);
 
 function Navbar() {
 	const [modalIsOpen, setModalIsOpen] = useState(false);
-	const location = useLocation();
 
-	// Ref for the navbar element
 	const navbarRef = useRef(null);
-
-	// Refs for the link elements
 	const linkRefs = useRef([]);
 
-	// Create the timeline
 	const navbarTimeline = gsap.timeline({
 	  paused: true,
+	  reversed: true,
 	});
 
 	useLayoutEffect(() => {
@@ -41,6 +36,7 @@ function Navbar() {
 				x: 0,
 				opacity: 1,
 				stagger: -0.02,
+				duration: 0.4,
 				}
 			)
 			.fromTo(
@@ -50,7 +46,7 @@ function Navbar() {
 				},
 				{
 				backgroundColor: "rgb(12, 17, 23, 0.8)",
-				delay: -0.2,
+				duration: 0.2,
 				}
 			);
 		})
@@ -64,37 +60,25 @@ function Navbar() {
         <nav id='navbar' className="navbar" ref={navbarRef}>
             <div className="navbar-open">
                 <i className="fa-solid fa-bars fa-2xl navbar-button" onClick={() => {
-                    navbarTimeline.progress() === 0
+                    navbarTimeline.reversed()
 					 ? navbarTimeline.play()
 					 : navbarTimeline.reverse();
                 }}/>
             </div>
             <div className="navbar-links">
-                <ForwardedLinkWithRef className={
-                    location.pathname === '/'
-                        ? 'active navbar-link'
-                        : 'navbar-link'
-                    }
+                <ForwardedLinkWithRef className='navbar-link'
                     to="#top"
 					ref={(el) => (linkRefs.current[0] = el)}
                 >
                     ACCUEIL
                 </ForwardedLinkWithRef>
-                <ForwardedLinkWithRef className={
-                    location.pathname === '/'
-                        ? 'active navbar-link'
-                        : 'navbar-link'
-                    }
+                <ForwardedLinkWithRef className='navbar-link'
                     to="#about"
 					ref={(el) => (linkRefs.current[1] = el)}
                 >
                     A PROPOS
                 </ForwardedLinkWithRef>
-                <ForwardedLinkWithRef className={
-                    location.pathname === '/'
-                        ? 'active navbar-link'
-                        : 'navbar-link'
-                    }
+                <ForwardedLinkWithRef className='navbar-link'
                     to="#projects"
 					ref={(el) => (linkRefs.current[2] = el)}
                 >
