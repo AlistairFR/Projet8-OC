@@ -2,10 +2,16 @@ import React from "react";
 
 import "./ModalButton.scss"
 
-function OpenButton({ setModalIsOpen }) {
+function OpenButton({ setModalIsOpen }, ref) {
   return (
-    <span className="navbar-link" onClick={() => setModalIsOpen(true)}>CONTACT</span>
+    <span
+      className="navbar-link"
+      ref={ref}
+      onClick={() => setModalIsOpen(true)}
+    >
+    CONTACT
+    </span>
   );
 }
 
-export default OpenButton;
+export default React.forwardRef(OpenButton);

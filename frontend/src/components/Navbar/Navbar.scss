@@ -11,6 +11,7 @@ nav {
     width: 100%;
     margin: 0;
     z-index: 2;
+    background-color: rgb(12, 17, 23, 0.0);
 
     .navbar-open {
         display: flex;
@@ -37,12 +38,13 @@ nav {
     }
 
     .navbar-links {
-        display: none;
+        display: flex;
         align-items: center;
         justify-content: center;
         user-select: none;
 
         .navbar-link {
+            opacity: 0;
             margin-left: 24px;
             text-decoration: none;
             color: antiquewhite;
@@ -56,9 +58,5 @@ nav {
         .navbar-link:active {
             text-decoration: overline;
         }
-    }
-
-    .navbar-links.open {
-        display: flex;
     }
 }
