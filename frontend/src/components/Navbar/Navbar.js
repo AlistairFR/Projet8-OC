@@ -31,10 +31,14 @@ function Navbar() {
 				{
 				x: -400,
 				opacity: 0,
+				cursor: "default",
+				pointerEvents: "none"
 				},
 				{
 				x: 0,
 				opacity: 1,
+				cursor: "pointer",
+				pointerEvents: "auto",
 				stagger: -0.02,
 				duration: 0.4,
 				}

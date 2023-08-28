@@ -77,10 +77,13 @@
         background-position: bottom;
         z-index: 0;
         border-radius: 10px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
-}
+    }
 }
 
+@media screen and (max-width: 700px) {
+    .projects-grid {
+        article {
+            min-height: 200px;
+        }
+    }
+}
