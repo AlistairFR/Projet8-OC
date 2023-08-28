@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useLayoutEffect, useRef } from "react";
 import {useLocation} from 'react-router-dom';
 import {HashLink as Link} from 'react-router-hash-link';
 import {gsap} from "gsap";
@@ -29,34 +29,36 @@ function Navbar() {
 	  paused: true,
 	});
 
-	useEffect(() => {
-	  // Ensure the navbar element and link elements are available
-	  if (navbarRef.current && linkRefs.current.length > 0) {
-		navbarTimeline
-		  .fromTo(
-			linkRefs.current,
-			{
-			  x: -400,
-			  opacity: 0,
-			},
-			{
-			  x: 0,
-			  opacity: 1,
-			  stagger: -0.02,
-			}
-		  )
-		  .fromTo(
-			navbarRef.current,
-			{
-			  backgroundColor: "rgb(12, 17, 23, 0.0)",
-			},
-			{
-			  backgroundColor: "rgb(12, 17, 23, 0.8)",
-			  delay: -0.2,
-			}
-		  );
-	  }
-	}, [navbarTimeline]);
+	useLayoutEffect(() => {
+		const ctx = gsap.context(() => {
+			navbarTimeline.fromTo(
+				linkRefs.current,
+				{
+				x: -400,
+				opacity: 0,
+				},
+				{
+				x: 0,
+				opacity: 1,
+				stagger: -0.02,
+				}
+			)
+			.fromTo(
+				navbarRef.current,
+				{
+				backgroundColor: "rgb(12, 17, 23, 0.0)",
+				},
+				{
+				backgroundColor: "rgb(12, 17, 23, 0.8)",
+				delay: -0.2,
+				}
+			);
+		})
+
+		return () => {
+			ctx.revert();
+		}
+	}, []);
 
     return (
         <nav id='navbar' className="navbar" ref={navbarRef}>
