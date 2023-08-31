@@ -6,7 +6,7 @@ function About() {
             <div className="about-content">
                 <h3>A propos de moi</h3>
                 <p>
-                    👋 &nbsp;Bonjour ! Je suis Jean-Baptiste, un <b>développeur web junior</b> à la recherche de mon premier rôle dans le développement.
+                    👋 &nbsp;Bonjour ! Je suis Jean-Baptiste, un <b>développeur web</b> à la recherche de mon premier rôle dans le développement.
                     <br/><br/>
                     💻 &nbsp;Avec une bonne maîtrise du HTML, CSS, et JavaScript, je suis <b>passionné</b> par la programmation, en particulier celle de jeux vidéos. Je me consacre à l'<b>apprentissage continu</b> des nouvelles technologies.
                     <br/><br/>
