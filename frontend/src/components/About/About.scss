@@ -99,8 +99,6 @@
         .about-contact {
             width: 90%;
             h3 {
-                width: 50%;
-                border-top: 2px solid #3be0a0;
                 padding-top: 34px;
                 margin-top: 0;
             }
@@ -109,6 +107,19 @@
                 display: flex;
                 justify-content: space-evenly;
                 padding: 0;
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    i{
+                        padding-bottom: 6px;
+                    }
+                    a {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
             }
         }
     }

@@ -2,7 +2,7 @@
     background-color: #3d4653;
     opacity: 0.8;
     width: calc(100% - 52px);
-    height: 50vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +25,6 @@
     }
 
     .skills-grid {
-        height: auto !important;
         display: flex !important;
         flex-wrap: wrap;
     }
