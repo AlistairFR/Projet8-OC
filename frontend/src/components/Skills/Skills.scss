@@ -10,13 +10,12 @@
     padding: 26px;
 
     .skills-grid {
-        height: 80%;
+        min-height: 400px;
         width: 100%;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 18%);
-        grid-template-rows: 20%;
-        grid-row-gap: 20px;
-        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
 }
 
@@ -26,7 +25,6 @@
     }
 
     .skills-grid {
-        display: flex !important;
-        flex-wrap: wrap;
+        justify-content: center !important;
     }
 }
