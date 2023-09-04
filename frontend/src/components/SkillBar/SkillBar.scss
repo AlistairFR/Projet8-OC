@@ -41,8 +41,28 @@
 
 @media screen and (min-width: 1800px) {
     .skill-inset {
+        i {
+            scale: 1.8;
+        }
         h4 {
-            font-size: 1.2em;
+            font-size: 1.3em;
+        }
+    }
+}
+
+@media screen and (min-height: 1200px) {
+    .skills-grid {
+        min-height: 600px !important;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .skill-inset {
+        i {
+            scale: 2 !important;
+        }
+        h4 {
+            font-size: 1.5em;
         }
     }
 }
