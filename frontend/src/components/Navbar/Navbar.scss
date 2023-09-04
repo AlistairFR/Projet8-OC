@@ -65,3 +65,10 @@ nav {
         font-size: 0.7rem;
     }
 }
+
+@media screen and (min-width: 2200px) {
+    #navbar {
+        height: 100px;
+        font-size: 1.6em;
+    }
+}
