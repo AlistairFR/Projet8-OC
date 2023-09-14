@@ -32,7 +32,7 @@
         width: 30%;
         height: calc(100% - 52px);
 
-        button {
+        #button {
             align-items: center;
             background-color: #0c1118;
             border: none;
@@ -41,6 +41,7 @@
             width: fit-content;
             border-radius: 10px;
             padding-right: 14px;
+            text-decoration: none;
 
             i {
                 margin-right: 14px;
@@ -49,7 +50,7 @@
             }
         }
 
-        button:hover {
+        #button:hover {
             border: 1px solid #1df2f0;
             box-shadow: 0px 10px 10px -10px #1df2f0;
             cursor: pointer;

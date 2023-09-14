@@ -1,5 +1,7 @@
 import './About.scss'
 
+import pdf from "../../docs/cv-winckel.pdf"
+
 function About() {
     return(
         <div className="about-container" id='about'>
@@ -34,7 +36,7 @@ function About() {
                     </li>
                     <li><i className="fa-solid fa-at" style={{color:"#1df2f0"}}/>contact@winckel-dev.fr</li>
                 </ul>
-                <button><i className="fa-solid fa-download" style={{color: "#1df2f0"}}/>Télécharger mon CV</button>
+                <a href={pdf} target='_blank' rel='noreferrer' id='button'><i className="fa-solid fa-download" style={{color: "#1df2f0"}}/>Télécharger mon CV</a>
             </div>
         </div>
     )
