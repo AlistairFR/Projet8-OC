@@ -26,47 +26,6 @@
         }
     }
 
-    .project-text:hover {
-        height: 100%;
-        box-shadow: 0 10px 40px -10px #1df2f0;
-        border-radius: 10px;
-        background-color: rgb(34, 48, 59, 0.9);
-
-        .project-desc {
-            display: none;
-        }
-
-        .project-hidden {
-            display: flex;
-            flex-direction: column;
-
-            .project-links {
-                width: 95%;
-                margin: auto;
-                display: flex;
-                justify-content: space-evenly;
-                position: absolute;
-                bottom: 18px;
-
-                a {
-                    text-decoration: none;
-                    color: antiquewhite;
-                    font-weight: 700;
-                    cursor: pointer;
-
-                    i {
-                        margin-right: 8px;
-                    }
-                }
-
-                a:hover {
-                    color: #1df2f0;
-                }
-            }
-
-        }
-    }
-
     img {
         position: absolute;
         top: 0;
@@ -135,6 +94,49 @@
                     }
                 }
             }
+        }
+    }
+}
+
+.projects-grid article:hover {
+    .project-text {
+        height: 100%;
+        box-shadow: 0 10px 40px -10px #1df2f0;
+        border-radius: 10px;
+        background-color: rgb(34, 48, 59, 0.9);
+
+        .project-desc {
+            display: none;
+        }
+
+        .project-hidden {
+            display: flex;
+            flex-direction: column;
+
+            .project-links {
+                width: 95%;
+                margin: auto;
+                display: flex;
+                justify-content: space-evenly;
+                position: absolute;
+                bottom: 18px;
+
+                a {
+                    text-decoration: none;
+                    color: antiquewhite;
+                    font-weight: 700;
+                    cursor: pointer;
+
+                    i {
+                        margin-right: 8px;
+                    }
+                }
+
+                a:hover {
+                    color: #1df2f0;
+                }
+            }
+
         }
     }
 }
