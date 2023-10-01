@@ -1,6 +1,6 @@
 import './About.scss'
 
-import pdf from "../../docs/cv-winckel.pdf"
+import pdf from "../../docs/CV_WINCKEL_Jean-Baptiste.pdf"
 
 function About() {
     return(
