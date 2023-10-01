@@ -23,7 +23,7 @@ exports.sendEmail = (req, res) => {
     //Options du mail
     const mailOptions = {
         from: 'contact.passionsfrance@gmail.com',
-        to: 'contact@winckel-dev.fr',
+        to: 'winckeldev@gmail.com',
         subject: `Formulaire - ${subject}`,
         text: `Nom: ${name}\nEmail: ${email}\n\n${message}`
     };
